@@ -20,7 +20,7 @@ const ModalContent = styled.div`
   background-color: white;
   padding: 20px;
   border-radius: 5px;
-  min-width: 800px;
+  min-width: 600px;
   
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   position: relative; /* Add this line */
@@ -31,14 +31,14 @@ const ModalContent = styled.div`
 `;
 
 const TextDiv=styled.div`
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
 `
 const ButtonContainer = styled.div`
-display: flex;
-justify-content:flex-end;
+    display: flex;
+    justify-content:flex-end;
 `
 
 const CloseButton = styled.button`
@@ -49,18 +49,21 @@ const CloseButton = styled.button`
   border: none;
   font-size: 25px;
   cursor: pointer;
+  &:hover{
+    color:red;
+  }
 `;
 const Title = styled.p`
-font-weight: 700;
-font-size: 25px;
-margin:0;
+    font-weight: 700;
+    font-size: 23px;
+    margin:0;
 
 `
 const Brand = styled.p`
-font-weight: 400;
-font-size: 20px;
-color:grey;
-margin:0;
+    font-weight: 400;
+    font-size: 16px;
+    color:grey;
+    margin:0;
 
 `
 const InputImageContainer=styled.div`
@@ -92,17 +95,17 @@ const Input= styled.input`
 `
 
 const ModalButton = styled.button`
-  background-color: green;
+  background-color: #105d2c;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: bold;
   cursor: pointer;
   margin-right: 10px;
   &:hover{
-    background-color:#f5f5f5 ;
+    background-color:#0e4e26 ;
 
   }
 `;

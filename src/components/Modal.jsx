@@ -17,11 +17,12 @@ const ModalContainer = styled.div`
 const ModalContent = styled.div`
   background-color: white;
   padding: 20px;
+  max-height: 150px;
   border-radius: 5px;
-  width: 400px;
+  width: 300px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   position: relative; /* Add this line */
-  padding-right:30px;
+  padding-right:0px;
   padding-left: 30px;
   display:flex;
   flex-direction: column;
@@ -31,7 +32,7 @@ const TextDiv=styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-font-size: 20px;
+font-size: 13px;
 `
 const ButtonContainer = styled.div`
 display: flex;
@@ -46,10 +47,13 @@ const CloseButton = styled.button`
   border: none;
   font-size: 25px;
   cursor: pointer;
+  &:hover{
+    color:red;
+  }
 `;
 const P = styled.p`
 font-weight: 700;
-font-size: 23px;
+font-size: 16px;
 
 `
 
@@ -59,7 +63,7 @@ const ModalButton = styled.button`
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   margin-right: 10px;
